@@ -130,35 +130,84 @@ table {
 * {
   box-sizing: border-box;
 }
-html,
-body {
-  height: 100%;
+.flex-column {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.flex-row {
+  display: flex;
+  justify-content: space-evenly;
+}
+html,
+body {
+  height: 100%;
+  background-color: #696969;
+  color: #a10000;
+  width: 100%;
 }
 html header,
 body header {
   display: flex;
   flex-direction: column;
-  padding-bottom: 40px;
   align-items: center;
+  margin-bottom: 5px;
 }
 html header nav,
 body header nav {
-  padding-bottom: 20px;
   display: flex;
   justify-content: space-evenly;
+  border: 1px solid #a10000;
+  background-color: #a10000;
+  padding: 20px;
+}
+html header nav a,
+body header nav a {
+  padding: 5px;
+  text-decoration: none;
+  color: #696969;
+  margin: 10px;
+  border: 1px solid #696969;
+  background-color: #696969;
+  color: #a10000;
+}
+html header section,
+body header section {
+  border: 1px solid #a10000;
+  padding: 10px;
 }
 html header img,
 body header img {
+  margin-top: 20px;
   max-width: 20%;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #a10000;
 }
 html section,
 body section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 40px;
+  margin-bottom: 20px;
+}
+html section article,
+body section article {
+  border: 1px solid #a10000;
+  padding: 10px;
+}
+html section article h3,
+body section article h3 {
+  display: flex;
+  justify-content: center;
+}
+html footer,
+body footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+html footer article,
+body footer article {
+  border: 1px solid #a10000;
+  padding: 10px;
 }
